@@ -16,7 +16,7 @@ class DashboardWidgetSmsir
 	public function smsir_show_widget() {
 		?>
 			<div class="smsir_dashboard_widget">
-				<div class="credit">1285 پیامک</div>
+				<div class="credit"><i class="far fa-money-bill-alt"></i> 1285 پیامک </div>
 				<div class="info-details">
 					<ul>
 						<li>مخاطبین: ۱۰ نفر</li>
