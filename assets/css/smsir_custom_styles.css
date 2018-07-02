@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Sahel;
+    src: url('../fonts/sahel/Sahel-FD.eot');
+    src: url('../fonts/sahel/Sahel-FD.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sahel/Sahel-FD.woff') format('woff'),
+    url('../fonts/sahel/Sahel-FD.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Sahel;
+    src: url('../fonts/sahel/Sahel-Bold-FD.eot');
+    src: url('../fonts/sahel/Sahel-Bold-FD.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sahel/Sahel-Bold-FD.woff') format('woff'),
+    url('../fonts/sahel/Sahel-Bold-FD.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Sahel;
+    src: url('../fonts/sahel/Sahel-Black-FD.eot');
+    src: url('../fonts/sahel/Sahel-Black-FD.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sahel/Sahel-Black-FD.woff') format('woff'),
+    url('../fonts/sahel/Sahel-Black-FD.ttf') format('truetype');
+    font-weight: 900;
+}
+
+#smsir_widget {
+    font-family: "Sahel";
+}
+#smsir_widget .ui-sortable-handle {
+    font-family: "Sahel";
+}
+#smsir_widget .credit {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
