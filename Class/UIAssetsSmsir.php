@@ -8,8 +8,8 @@ class UIAssetsSmsir
 
 	public function smsir_load_assets($page) {
 		//styles css
-		wp_enqueue_style('regular-fa', ASSETS_CSS . '/css/regular.css', '', '5.0.0');
-		wp_enqueue_style('fontawesome5', ASSETS_CSS . '/css/fontawesome.css', 'regular-fa', '5.0.0');
+		wp_enqueue_style('regular-fa', ASSETS_CSS . '/regular.css', '', '5.0.0');
+		wp_enqueue_style('fontawesome5', ASSETS_CSS . '/fontawesome.css', 'regular-fa', '5.0.0');
 		wp_enqueue_style('smsir_admin_styles', ASSETS_CSS . '/smsir_custom_styles.css', '', '1.0.0');
 
 		//scrtips js

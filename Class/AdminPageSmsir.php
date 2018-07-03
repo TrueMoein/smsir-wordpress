@@ -31,10 +31,6 @@ class AdminPageSmsir implements IHasContent
 	}
 
 	public function smsir_action_content($callback) {
-		?>
-
-		this is it. it is php content of folan
-
-		<?php
+		include_once CONTENTS . '/option-page.php';
 	}
 }
