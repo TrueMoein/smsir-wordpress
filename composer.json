@@ -1,0 +1,19 @@
+{
+    "name": "truemoein/smsir-wordpress",
+    "description": "The best wordpress plugin for send sms",
+    "type": "wordpress-plugin",
+    "license": "GPL2",
+    "authors": [
+        {
+            "name": "Moein Alizadeh",
+            "email": "moein.alizade@gmail.com"
+        }
+    ],
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "SmsirWordpress\\": "Class"
+        }
+    }
+}

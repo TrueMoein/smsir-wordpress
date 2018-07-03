@@ -25,14 +25,26 @@
     font-weight: 900;
 }
 
-#smsir_widget {
-    font-family: "Sahel";
+#smsir_widget, #smsir_post_metabox, #smsir_post_metabox .ui-sortable-handle, #smsir_widget .ui-sortable-handle {
+    font-family: 'Sahel', sans-serif;
+    direction: rtl;
 }
-#smsir_widget .ui-sortable-handle {
-    font-family: "Sahel";
-}
+
 #smsir_widget .credit {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+}
+
+tr[data-plugin="smsir-wordpress/smsir-wordpress.php"] {
+    font-family: Sahel, sans-serif;
+}
+
+html[lang="en-US"] tr[data-plugin="smsir-wordpress/smsir-wordpress.php"] {
+    direction: rtl;
+    text-align: left;
+}
+
+html[lang="en-US"] tr[data-plugin="smsir-wordpress/smsir-wordpress.php"] th.check-column {
+    border-left: 4px solid #4CAF50;
 }

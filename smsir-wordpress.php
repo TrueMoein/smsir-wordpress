@@ -1,14 +1,19 @@
 <?php
 /*
-Plugin Name:  پیامک sms.ir
+Plugin Name:  پیامک Sms.ir
 Plugin URI:   https://www.sms.ir/smsir-wordpress
-Description:  کاملترین پلاگین ارسال پیامک با امکانات بسیار زیاد
+Description:  کاملترین پلاگین ارسال پیامک، امکان اتصال به وردپرس، ووکامرس، فرم ساز Gravity Forms و Contact Form 7 و صدها امکان دیگر نظیر : ارسال کد فعال سازی ثبت نام به کاربران، عضویت خبرنامه و ...
 Version:      1.0.0
 Author:       Moein Alizadeh
-Author URI:   https://Keyad.ir/
+Author URI:   https://TrueMoein.ir/
 License:      GPL2
 */
 
-include_once __DIR__ . '/Class/AdminPageSmsir.php';
-include_once __DIR__ . '/Class/DashboardWidgetSmsir.php';
-include_once __DIR__ . '/Class/UIAssetsSmsir.php';
+// fireup the autoloader
+include_once __DIR__ . '/vendor/autoload.php';
+
+// instantiate our classes
+new SmsirWordpress\AdminPageSmsir();
+new SmsirWordpress\PostMetaboxSmsir();
+new SmsirWordpress\UIAssetsSmsir();
+new SmsirWordpress\DashboardWidgetSmsir();

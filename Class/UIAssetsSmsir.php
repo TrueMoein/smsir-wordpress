@@ -1,4 +1,4 @@
-<?php
+<?php namespace SmsirWordpress;
 
 class UIAssetsSmsir
 {
@@ -17,5 +17,3 @@ class UIAssetsSmsir
 		wp_enqueue_script('widget', plugins_url('/smsir-wordpress/assets/scripts/widget.js'), 'vuejs', '1.0.0');
 	}
 }
-
-new UIAssetsSmsir();

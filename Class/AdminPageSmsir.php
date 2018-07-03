@@ -1,4 +1,4 @@
-<?php
+<?php namespace SmsirWordpress;
 
 class AdminPageSmsir
 {
@@ -33,5 +33,3 @@ class AdminPageSmsir
 	}
 
 }
-
-new AdminPageSmsir();

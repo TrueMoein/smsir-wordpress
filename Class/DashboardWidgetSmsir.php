@@ -1,4 +1,4 @@
-<?php
+<?php namespace SmsirWordpress;
 
 class DashboardWidgetSmsir
 {
@@ -29,5 +29,3 @@ class DashboardWidgetSmsir
 		<?php
 	}
 }
-
-new DashboardWidgetSmsir();
