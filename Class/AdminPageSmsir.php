@@ -1,6 +1,8 @@
 <?php namespace SmsirWordpress;
 
-class AdminPageSmsir
+use SmsirWordpress\Interfaces\IHasContent;
+
+class AdminPageSmsir implements IHasContent
 {
 	private $icon;
 	private $slug;
@@ -8,7 +10,7 @@ class AdminPageSmsir
 	private $menu_title;
 
 	public function __construct() {
-		$this->icon = plugins_url('/smsir-wordpress/assets/img/brand/sms_icon.png');
+		$this->icon = ASSETS_IMG . '/brand/sms_icon.png';
 		$this->slug = 'smsir-admin';
 		$this->title = 'مدیریت پلاگین پیامک Sms.ir';
 		$this->menu_title = 'پیامک Sms.ir';
@@ -22,14 +24,17 @@ class AdminPageSmsir
 			$this->menu_title,
 			'manage_options',
 			$this->slug,
-			array(&$this, 'show_content'),
+			array(&$this, 'smsir_action_content'),
 			$this->icon,
 			25
 		);
 	}
 
-	public function show_content() {
-		echo '<h1>This is the Sms.ir Admin Menu Options</h1>';
-	}
+	public function smsir_action_content($callback) {
+		?>
 
+		this is it. it is php content of folan
+
+		<?php
+	}
 }

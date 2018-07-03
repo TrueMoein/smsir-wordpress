@@ -12,8 +12,12 @@ License:      GPL2
 // fireup the autoloader
 include_once __DIR__ . '/vendor/autoload.php';
 
-// instantiate our classes
-new SmsirWordpress\AdminPageSmsir();
-new SmsirWordpress\PostMetaboxSmsir();
+
+// load all assets (styles and scripts)
 new SmsirWordpress\UIAssetsSmsir();
+// create the options page of plugin
+new SmsirWordpress\AdminPageSmsir();
+// create a metabox for posts
+new SmsirWordpress\PostMetaboxSmsir();
+// create a dashboard widget for details
 new SmsirWordpress\DashboardWidgetSmsir();

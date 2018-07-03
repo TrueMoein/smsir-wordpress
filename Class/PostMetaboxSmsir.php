@@ -1,6 +1,8 @@
 <?php namespace SmsirWordpress;
 
-class PostMetaboxSmsir
+use SmsirWordpress\Interfaces\IHasContent;
+
+class PostMetaboxSmsir implements IHasContent
 {
 
 	public function __construct() {
@@ -11,21 +13,21 @@ class PostMetaboxSmsir
 		add_meta_box('smsir_post_metabox',
 			'پلاگین پیامک Sms.ir',
 			array(
-				&$this, 'content_meta_box'),
+				&$this, 'smsir_action_content'),
 				'post',
 				'side',
 				'high'
 			);
 	}
 
-	public function content_meta_box($post) {
+	public function smsir_action_content($post) {
 		?>
-		<ul>
-			<li><?php echo $post->post_title ?></li>
-			<li>به مخاطبین بگو پست جدید داریم</li>
-			<li>به این شماره ها این پست رو اطلاع بده</li>
-			<li><a href="<?php echo $post->guid ?>">آدرس کوتاه پست</a></li>
-		</ul>
+        <ul>
+            <li><?php echo $post->post_title ?></li>
+            <li>به مخاطبین بگو پست جدید داریم</li>
+            <li>به این شماره ها این پست رو اطلاع بده</li>
+            <li><a href="<?php echo $post->guid ?>">آدرس کوتاه پست</a></li>
+        </ul>
 		<?php
 	}
 }
