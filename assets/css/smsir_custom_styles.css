@@ -93,12 +93,12 @@
 }
 
 .smsir_navigator li:hover {
-    background: #23282d;
+    background: #1f1f1f;
     color: #d3d3d3;
 }
 
 .smsir_navigator li.active {
-    background: #12171d;
+    background: #0c0c0c;
     color: #ffffff;
 }
 

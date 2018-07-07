@@ -9,11 +9,11 @@ class AdminPageSmsir implements IHasContent
 	private $title;
 	private $menu_title;
 
-	public function __construct() {
+	public function __construct($menu, $page_title) {
 		$this->icon = ASSETS_IMG . '/brand/sms_icon.png';
 		$this->slug = 'smsir-admin';
-		$this->title = 'مدیریت پلاگین پیامک Sms.ir';
-		$this->menu_title = 'پیامک Sms.ir';
+		$this->title = $page_title;
+		$this->menu_title = $menu;
 
 		add_action('admin_menu', array(&$this, 'register_main_menu_page'));
 	}
