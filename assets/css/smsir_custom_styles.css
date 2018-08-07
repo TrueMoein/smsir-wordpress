@@ -1,28 +1,19 @@
 @font-face {
-    font-family: Sahel;
-    src: url('../fonts/sahel/Sahel-FD.eot');
-    src: url('../fonts/sahel/Sahel-FD.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/sahel/Sahel-FD.woff') format('woff'),
-    url('../fonts/sahel/Sahel-FD.ttf') format('truetype');
+    font-family: Samim;
+    src: url('../fonts/samim/Samim.eot');
+    src: url('../fonts/samim/Samim.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/samim/Samim.woff') format('woff'),
+    url('../fonts/samim/Samim.ttf') format('truetype');
     font-weight: normal;
 }
 
 @font-face {
-    font-family: Sahel;
-    src: url('../fonts/sahel/Sahel-Bold-FD.eot');
-    src: url('../fonts/sahel/Sahel-Bold-FD.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/sahel/Sahel-Bold-FD.woff') format('woff'),
-    url('../fonts/sahel/Sahel-Bold-FD.ttf') format('truetype');
+    font-family: Samim;
+    src: url('../fonts/samim/Samim-Bold.eot');
+    src: url('../fonts/samim/Samim-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/samim/Samim-Bold.woff') format('woff'),
+    url('../fonts/samim/Samim-Bold.ttf') format('truetype');
     font-weight: bold;
-}
-
-@font-face {
-    font-family: Sahel;
-    src: url('../fonts/sahel/Sahel-Black-FD.eot');
-    src: url('../fonts/sahel/Sahel-Black-FD.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/sahel/Sahel-Black-FD.woff') format('woff'),
-    url('../fonts/sahel/Sahel-Black-FD.ttf') format('truetype');
-    font-weight: 900;
 }
 
 .clearfix:after {
@@ -47,7 +38,7 @@
 .smsir_page_content h3,
 .smsir_page_content h4
 {
-    font-family: 'Sahel', sans-serif;
+    font-family: 'Samim', sans-serif;
     direction: rtl;
 }
 
@@ -141,7 +132,7 @@ li.active:after {
 }
 
 tr[data-plugin="smsir-wordpress/smsir-wordpress.php"] {
-    font-family: Sahel, sans-serif;
+    font-family: Samim, sans-serif;
 }
 
 html[lang="en-US"] tr[data-plugin="smsir-wordpress/smsir-wordpress.php"] {
