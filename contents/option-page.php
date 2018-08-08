@@ -1,5 +1,4 @@
 <div class="wrap smsir_page_content" id="option-page" v-cloak>
-    <h3>تنظیمات پلاگین ارسال پیامک Sms.ir</h3>
 	<div class="smsir_main_option_panel clearfix">
 
         <?php include_once 'navigation/navigation.php' ?>

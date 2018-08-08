@@ -1,3 +1,3 @@
 <div class="smsir_inside_content_box">
-	تنظیمات پلاگین برای فرم سون
+	<h1 class="center">Contact 7</h1>
 </div>
