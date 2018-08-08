@@ -1,0 +1,24 @@
+{
+  "name": "smsir-wordpress",
+  "version": "0.1.0",
+  "description": "Official sms.ir wordpress plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "sass --watch src/scss:assets/css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrueMoein/smsir-wordpress.git"
+  },
+  "author": "Moein Alizadeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TrueMoein/smsir-wordpress/issues"
+  },
+  "homepage": "https://github.com/TrueMoein/smsir-wordpress#readme",
+  "devDependencies": {
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
+}
