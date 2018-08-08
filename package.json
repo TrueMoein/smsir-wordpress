@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-sass": "sass --watch src/scss:assets/css --style compressed"
+    "dev": "webpack --watch",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,22 @@
   },
   "homepage": "https://github.com/TrueMoein/smsir-wordpress#readme",
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.56",
+    "@babel/preset-env": "^7.0.0-beta.56",
+    "babel-loader": "^8.0.0-beta",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.9.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "url-loader": "^1.0.1",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "mini-css-extract-plugin": "^0.4.1",
+    "vue": "^2.5.17"
   }
 }

@@ -1,5 +1,7 @@
-window.onload = function () {
-    var app = new Vue({
+import Vue from "vue/dist/vue";
+
+window.onload = () => {
+    const optionPage = new Vue({
         el: '#option-page',
         data: {
             activatePage: true,
@@ -12,7 +14,7 @@ window.onload = function () {
         },
 
         methods: {
-            pageSwitch: function(page) {
+            pageSwitch(page) {
                 this.deactiveAllPages();
                 switch (page) {
                     case 'activatePage' : this.activatePage = true; break;
@@ -24,7 +26,7 @@ window.onload = function () {
                     case 'settingsPage' : this.settingsPage = true; break;
                 }
             },
-            deactiveAllPages: function() {
+            deactiveAllPages() {
                 this.activatePage = this.sendPage = this.newsletterPage = this.wooPage = this.gravityPage = this.contact7Page = this.settingsPage = false;
             }
         }
