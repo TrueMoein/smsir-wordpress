@@ -20,7 +20,7 @@ class ComposerStaticInit4cd8fa63b964e1731cf661c3d970633d
     public static $prefixDirsPsr4 = array (
         'SmsirWordpress\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/Class',
+            0 => __DIR__ . '/../..' . '/includes',
         ),
     );
 

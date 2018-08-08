@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'SmsirWordpress\\' => array($baseDir . '/Class'),
+    'SmsirWordpress\\' => array($baseDir . '/includes'),
 );
