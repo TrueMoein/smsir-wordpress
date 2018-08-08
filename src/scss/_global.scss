@@ -1,0 +1,25 @@
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+[v-cloak] {
+  opacity: 0;
+}
+
+#smsir_widget,
+#smsir_post_metabox,
+#smsir_post_metabox .ui-sortable-handle,
+#smsir_widget .ui-sortable-handle,
+.smsir_page_content,
+.smsir_page_content h1,
+.smsir_page_content h2,
+.smsir_page_content h3,
+.smsir_page_content h4
+{
+  font-family: $samim;
+  direction: rtl;
+}

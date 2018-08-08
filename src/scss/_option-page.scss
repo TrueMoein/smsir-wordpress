@@ -1,0 +1,23 @@
+.smsir_page_content h3 {
+  text-align: center;
+  margin: 20px auto;
+  font-weight: 900;
+  color: #5a5a5a;
+}
+
+.smsir_main_option_panel {
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  border: solid 1px #d8d8d8;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px #d4d4d4;
+  max-height: 511px;
+}
+
+.smsir_main_option_panel .smsir_option_panel_contents {
+  float: right;
+  width: 85%;
+  overflow: auto;
+  max-height: 511px;
+}

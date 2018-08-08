@@ -10,7 +10,7 @@ class UIAssetsSmsir
 		//styles css
 		wp_enqueue_style('regular-fa', ASSETS_CSS . '/regular.css', '', '5.0.0');
 		wp_enqueue_style('fontawesome5', ASSETS_CSS . '/fontawesome.css', 'regular-fa', '5.0.0');
-		wp_enqueue_style('smsir_admin_styles', ASSETS_CSS . '/smsir_custom_styles.css', '', '1.0.0');
+		wp_enqueue_style('smsir_admin_styles', ASSETS_CSS . '/style.css', '', '1.0.0');
 
 		//scrtips js
 		wp_enqueue_script('vuejs', ASSETS_JS. '/vue.min.js', '', '2.5.17');

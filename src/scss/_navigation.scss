@@ -1,0 +1,58 @@
+.smsir_main_option_panel .smsir_navigator {
+  float: right;
+  width: 15%;
+  text-align: center;
+}
+
+.smsir_navigator ul {
+  padding: 0;
+  margin: 0;
+}
+
+.smsir_navigator li {
+  background: $nav-color;
+  position: relative;
+  padding: 25px 0;
+  border-bottom: solid 1px gray;
+  color: #a7a7a7;
+  line-height: 0;
+  font-weight: 800;
+  margin: 0;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.smsir_navigator li:hover {
+  background: darken($nav-color, 3%);
+  color: #d3d3d3;
+}
+
+.smsir_navigator li.active {
+  background: darken($nav-color, 10%);
+  color: #ffffff;
+}
+
+li.active:after {
+  left: 0;
+  border: 8px solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-left-color: #ffffff;
+  top: 50%;
+  margin-top: -8px;
+}
+
+.smsir_navigator li i {
+  display: block;
+  font-size: 22px;
+  position: relative;
+  top: -18px;
+}
+
+.smsir_navigator li span {
+  position: relative;
+  bottom: -6px;
+}
