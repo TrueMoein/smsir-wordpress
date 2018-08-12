@@ -6,6 +6,7 @@
   border-radius: 5px;
   box-shadow: 0 2px 10px #d4d4d4;
   max-height: 511px;
+  position: relative;
 }
 
 .smsir_main_option_panel .smsir_option_panel_contents {
@@ -13,4 +14,41 @@
   width: 85%;
   overflow: auto;
   max-height: 511px;
+}
+
+.left-bar-option-panel {
+  background: lighten($nav-color, 10%);
+  border-radius: 5px 0 0 5px;
+  color: #fff;
+  font-size: 18px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 25px;
+  line-height: 2;
+}
+
+.left-bar-option-panel .left-bar-title {
+  color: #929292;
+  font-size: 16px;
+  line-height: 0;
+  position: absolute;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  width: 100%;
+  bottom: 23%;
+}
+
+.left-bar-option-panel .far {
+  cursor: pointer;
+}
+
+.main-logo-plugin {
+  text-align: center;
+}
+
+.main-logo-plugin img {
+  max-width: 100%;
 }

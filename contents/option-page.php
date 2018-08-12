@@ -4,8 +4,8 @@
         <?php include_once 'navigation/navigation.php' ?>
 
         <div class="smsir_option_panel_contents">
-            <ul style="padding: 10px 20px;margin: 0;">
-                <li v-show="activatePage">
+            <ul style="padding: 10px 20px 10px 45px;margin: 0;">
+                <li v-show="activatePage" id="activate-page">
                     <?php include_once 'forms/activate.php' ?>
                 </li>
                 <li v-show="sendPage">
@@ -27,6 +27,13 @@
 	                <?php include_once 'forms/main-settings.php' ?>
                 </li>
             </ul>
+
+            <div class="left-bar-option-panel">
+                <div class="far fa-save"></div>
+                <div class="far fa-undo"></div>
+
+                <div class="left-bar-title">{{activeTitle}}</div>
+            </div>
         </div>
 
     </div>
