@@ -1,3 +1,7 @@
+#option-page {
+  margin-top: 33px;
+}
+
 .smsir_main_option_panel {
   background: white;
   width: 80%;
@@ -45,10 +49,14 @@
   cursor: pointer;
 }
 
-.main-logo-plugin {
+
+
+.smsir_inside_content_box .smsir__form-parent {
   text-align: center;
 }
 
-.main-logo-plugin img {
-  max-width: 100%;
+.smsir_inside_content_box .smsir__form-parent input {
+  display: block;
+  width: 50%;
+  margin: 30px auto 0;
 }
