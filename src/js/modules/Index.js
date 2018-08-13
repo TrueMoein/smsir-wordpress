@@ -40,6 +40,13 @@ window.onload = () => {
                 },
                 deactiveAllPages() {
                     this.activatePage = this.sendPage = this.newsletterPage = this.wooPage = this.gravityPage = this.contact7Page = this.settingsPage = false;
+                },
+
+                /*=========== Activate Plugin Methods ===========*/
+                saveActivatePluginForm() {
+                    console.log('Plugin Activated');
+                    console.log(this.apiKey);
+                    console.log(this.secretKey);
                 }
             }
         });

@@ -5,11 +5,23 @@ const path = require('path');
 module.exports = {
     entry: './src/js/main.js',
     output: {
-        filename: 'main.js',
-        path: path.resolve(__dirname, 'assets')
+        filename: 'smsir-js.js?[hash]',
+        path: path.resolve(__dirname, 'assets/')
     },
     module: {
         rules: [
+            {
+                test: /\.(png|jpg|gif)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]?[hash]',
+                            outputPath: '../img/'
+                        }
+                    }
+                ]
+            },
             {
                 test: /\.js$/,
                 exclude: /(node_modules|bower_components)/,
@@ -27,13 +39,13 @@ module.exports = {
                     {
                         loader: "css-loader",
                         options: {
-                            sourceMap: true,
+                            sourceMap: true
                         }
                     },
                     {
                         loader: "sass-loader",
                         options: {
-                            sourceMap: true,
+                            sourceMap: true
                         }
                     }
                 ]
@@ -44,12 +56,12 @@ module.exports = {
                 use: [{
                     loader: 'file-loader',
                     options: {
-                        name: '[name].[ext]',
-                        outputPath: 'fonts/'
+                        name: '[name].[ext]?[hash]',
+                        outputPath: '../fonts/'
                     }
                 }]
             }
-        ]
+        ],
     },
     optimization: {
         minimizer: [
@@ -65,7 +77,7 @@ module.exports = {
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
             // both options are optional
-            filename: "[name].css",
+            filename: "css/[name].css",
             chunkFilename: "[id].css"
         })
     ]
