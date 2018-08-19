@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = {
     entry: './src/js/main.js',
     output: {
-        filename: 'smsir-js.js?[hash]',
+        filename: 'smsir-js.js',
         path: path.resolve(__dirname, 'assets/')
     },
     module: {
@@ -36,18 +36,8 @@ module.exports = {
                 test: /\.(sa|sc|c)ss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    {
-                        loader: "css-loader",
-                        options: {
-                            sourceMap: true
-                        }
-                    },
-                    {
-                        loader: "sass-loader",
-                        options: {
-                            sourceMap: true
-                        }
-                    }
+                    "css-loader",
+                    "sass-loader",
                 ]
 
             },
@@ -68,7 +58,7 @@ module.exports = {
             new UglifyJsPlugin({
                 cache: true,
                 parallel: true,
-                sourceMap: true // set to true if you want JS source maps
+                sourceMap: true
             }),
             new OptimizeCSSAssetsPlugin({})
         ]
@@ -78,7 +68,8 @@ module.exports = {
             // Options similar to the same options in webpackOptions.output
             // both options are optional
             filename: "css/[name].css",
-            chunkFilename: "[id].css"
+            chunkFilename: "[id].css",
+            sourceMap: true
         })
     ]
 };

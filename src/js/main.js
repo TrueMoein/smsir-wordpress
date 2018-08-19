@@ -1,2 +1,2 @@
-require('../scss/style.scss');
-require('./modules');
+import '../scss/style.scss';
+import './modules';

@@ -1,8 +1,8 @@
 <div class="smsir_navigator">
 	<ul>
 		<li @click="pageSwitch('activatePage')" :class="{active: activatePage}">
-			<i class="far fa-check-circle"></i>
-			<span>فعالسازی</span>
+            <i class="far fa-check-circle"></i>
+            <span>فعالسازی</span>
 		</li>
 		<li @click="pageSwitch('sendPage')" :class="{active: sendPage}">
 			<i class="far fa-envelope"></i>
