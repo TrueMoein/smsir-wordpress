@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/TrueMoein/smsir-wordpress#readme",
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.56",
+    "@babel/core": "^7.20.7",
     "@babel/preset-env": "^7.0.0-beta.56",
     "babel-loader": "^8.0.0-beta",
     "css-loader": "^1.0.0",
